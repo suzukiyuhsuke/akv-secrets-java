@@ -17,6 +17,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue() throws IllegalArgumentException, InterruptedException
     {
+        //hogehoge
         com.keyvault.secrets.quickstart.App.main(null);
         assertTrue( true );
     }
