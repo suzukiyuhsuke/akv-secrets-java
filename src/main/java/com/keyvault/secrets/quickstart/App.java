@@ -22,13 +22,10 @@ public class App {
             .credential(new DefaultAzureCredentialBuilder().build())
             .buildClient();
 
-        Console con = System.console();  
 
         String secretName = "mySecret";
-
-        System.out.println("Please provide the value of your secret > ");
         
-        String secretValue = con.readLine();
+        String secretValue = "mySecretValue";
 
         System.out.print("Creating a secret in " + keyVaultName + " called '" + secretName + "' with value '" + secretValue + "` ... ");
 

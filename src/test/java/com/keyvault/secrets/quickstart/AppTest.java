@@ -11,10 +11,13 @@ public class AppTest
 {
     /**
      * Rigorous Test :-)
+     * @throws InterruptedException
+     * @throws IllegalArgumentException
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void shouldAnswerWithTrue() throws IllegalArgumentException, InterruptedException
     {
+        com.keyvault.secrets.quickstart.App.main(null);
         assertTrue( true );
     }
 }
